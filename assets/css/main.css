@@ -1,0 +1,156 @@
+* {}
+
+body h1 {
+	text-align: left;
+}
+span.required {
+	color: #f00;
+	font-size: 20px;
+	position: relative;
+}
+form {
+	border: 1px solid #00000005;
+    padding: 10px;
+    border-radius: 5px;
+	margin-bottom: 50px;
+    -webkit-box-shadow: 0px 5px 20px 0px #007bff0d;
+      -moz-box-shadow: 0px 5px 20px 0px #007bff0d;
+        -o-box-shadow: 0px 5px 20px 0px #007bff0d;
+           box-shadow: 0px 5px 20px 0px #007bff0d;
+}
+form .form-control {
+    border: 1px solid #ced4da3d;
+}
+form select {
+    color: #b7b7b7 !important;
+}
+form input::placeholder {
+	color: #b7b7b7 !important;
+}
+form div.alert{
+	padding: 0.15rem 1.25rem;
+}
+form#new-contract label {
+	font-weight: 600;
+    color: #007bff;
+}
+form input[type="tel"]{
+	width: 89%; 
+	 display: inline-block; 
+}
+form .form-group .group .add-phone.btn,
+form .form-group .group .remove-phone.btn {
+	width: 10%;
+    display: inline-block;
+	float: right;
+}
+form .btn.submit {
+	width: 100%;
+}
+form button.remove-phone.btn-primary {
+	background: #17a2b8;
+    border-color: #17a2b8;
+}
+table tbody tr td p {
+	margin: 0px;
+}
+body div.alert-success,
+body div.alert-primary {     
+    border-radius: 0px;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+body .dropdown {
+	text-align: left;
+  	display: inline-block;
+}
+body .dropdown-toggle {
+  	border-radius: 0px;
+}
+body .show>.btn-secondary.dropdown-toggle,
+body .btn-secondary,
+body .btn-secondary:hover {
+	background-color: #212529;
+    border-color: #212529;
+}
+body .dropdown-menu.show {
+    text-align: center;
+    background: #007bff;
+    border-radius: 0px;
+    border: unset;
+}
+body .dropdown-menu {
+	padding: 0px;
+    -webkit-box-shadow: 0px 3px 10px #00000057;
+       -moz-box-shadow: 0px 3px 10px #00000057;
+         -o-box-shadow: 0px 3px 10px #00000057;
+            box-shadow: 0px 3px 10px #00000057;
+}
+body .dropdown-menu.show a {
+	color: #fff;
+    border-bottom: 1px solid #0f7aed;
+}
+body .dropdown-menu.show a:last-child {
+	border-bottom: 0px solid #fff;	
+}
+body .dropdown-item:focus, 
+body .dropdown-item:hover {
+	background-color: #007bff;
+}
+body form.form-inline {
+	padding: 0px;
+	display: inline-block;
+	float: right;
+}
+body .search-bar {
+	padding-left: 0px;
+}
+body table tbody tr td:nth-child(12) a,
+body table tbody tr td:nth-child(11) a
+{
+	width: 100%;
+}
+body table thead tr th > a.dropdown-toggle
+{
+    left: 10px;
+    top: 1px;
+    margin-left: 5px;
+    border-radius: 2px;
+    -webkit-box-shadow: unset;
+       -moz-box-shadow: unset;
+         -o-box-shadow: unset;
+            box-shadow: unset;
+     
+}
+body table thead tr th > a.dropdown-desc::after {
+    transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);
+         	transform: rotate(180deg);
+    color: #ffe000;
+}
+body table thead tr th > a.close,
+body table thead tr th > a.close:hover
+{
+    color: #ffe000;
+    text-shadow: unset;
+    opacity: 1;
+    font-size: 15px;
+    top: 4px;
+    position: relative;
+    padding: 0px 3px 2px 3px;
+    left: -20px;
+    background: #4f565c;
+    border-radius: 2px;
+    -webkit-box-shadow: 0px 4px 7px #1b1d1e;
+       -moz-box-shadow: 0px 4px 7px #1b1d1e;
+         -o-box-shadow: 0px 4px 7px #1b1d1e;
+            box-shadow: 0px 4px 7px #1b1d1e;
+}
+body table thead tr th > a.close span
+{
+
+}
