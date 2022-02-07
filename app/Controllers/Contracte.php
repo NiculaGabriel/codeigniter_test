@@ -180,7 +180,6 @@ class Contracte extends BaseController
         $result = $this->_unserialize($result);        
         return view('Contracte/index', array('result' => $result, 
                                              '_filter' => array(),
-                                             // '_filter_url' => $this->_filter_url,
                                              'rows' => $this->rows,
                                              '_tabel_header' => $this->_tabel_header,
                                             )
@@ -242,8 +241,6 @@ class Contracte extends BaseController
                }
            }
         }
-
-        // dd($this->_tabel_header);
     }
     public function filter()
     {
@@ -273,31 +270,13 @@ class Contracte extends BaseController
         {
             $result = $this->_unserialize($result);
         }
- 
-        // if(count($_filter))
-        // {
-        //     $this->_filter_url .= '?';
-        //     $_count = 1;
-        //     foreach($_filter as $k => $v)
-        //     {
-        //         if($_count > 1){
-        //             $this->_filter_url .= (!empty($v) ? "&$k=$v" : '' );
-        //         }
-        //         else{
-        //             $this->_filter_url .= (!empty($v) ? "$k=$v" : '' );
-        //         }
-        //         ++$_count;
-        //     }
-        // }
 
 
         $this->rows = $this->setRowUrl($this->fields_filter, $this->rows);
-        $this->_tabel_header = $this->setRowUrl($this->fields_filter, $this->_tabel_header, 'sortby', 'row');
-        // dd($this->_tabel_header);
+        $this->_tabel_header = $this->setRowUrl($this->fields_filter, $this->_tabel_header, 'sortby', 'row');         
 
         return view('Contracte/index',  array('result'  => $result, 
-                                              '_filter' => $_filter, 
-                                              // '_filter_url' => $this->_filter_url,
+                                              '_filter' => $_filter,
                                               'rows' => $this->rows,
                                               '_tabel_header' => $this->_tabel_header,
                                         )
@@ -322,8 +301,7 @@ class Contracte extends BaseController
         }
         $result = $this->model->where('deleted', 0)->findAll(); 
         $result = $this->_unserialize($result);
-        return view('Contracte/index',  array('result'  => $result,                                                
-                                              // '_filter_url' => $this->_filter_url,
+        return view('Contracte/index',  array('result'  => $result,
                                               'rows' => $this->rows,
                                               '_tabel_header' => $this->_tabel_header,
                                         )
